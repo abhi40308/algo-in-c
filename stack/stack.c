@@ -7,6 +7,7 @@ void push(int stack[])
     if (top==max-1)
     {
         printf("stack is full mr.perfect\n");
+        printf("it is full baby so be careful ):");
     }
     else{
         int x;
