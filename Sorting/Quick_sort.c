@@ -23,9 +23,9 @@ void quicksort(int a[],int start,int end)
     }
 }
 
-void swap(int *a,int *b)
+void swap(int *t1,int *t2)
 {
-    int tmp=*a;
-    *a=*b;
-    *b=tmp;
+    int tmp=*t1;
+    *t1=*t2;
+    *t2=tmp;
 }
