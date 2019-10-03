@@ -72,10 +72,25 @@ void print()
 {
 	struct node *flag=start;
 	for(int i=0;;i++)
-	{	printf("%d",flag->data); printf("  ->   ");
-		flag = flag->next;
+	{	
+        //if no elements
 		if(flag==NULL)
-			break;
+		{
+            //run failed on 1st try since there were no elements.
+		    if(i==0)
+		    {
+                printf("No Elements were added to the list.");
+			}
+            else
+            {				
+		    break;
+            }
+		}
+		//if elements then exist print
+		else{
+		printf("%d",flag->data); printf("  ->   ");
+		flag = flag->next;
+		}
 	}
 }
 void delete_pos()
